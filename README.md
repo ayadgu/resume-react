@@ -19,6 +19,6 @@ Feel free to check it out and get to know me better. Your interest is truly appr
 
 ## How to Access
 
-Simply click the link [here](https://www.guillaumeayad.xyz/){:target="\_blank"} to explore my resume website.
+Simply click the link [here](https://www.guillaumeayad.xyz/) to explore my resume website.
 
 Thank you for stopping by! 🌐👋

@@ -46,17 +46,15 @@ function Home2() {
                 <b className="purple"> Python, Javascript and NoSQL</b>
               </i>{" "}
               and proficient in{" "}
-              <b className="purple"> Zendesk, Jira and ElasticSearch.</b>
-              <br />
-              <br />
-              Whenever possible, I also apply my passion for developing time
-              saving tools with <b className="purple">Python</b> and
               <i>
-                <b className="purple"> Modern Library and Frameworks</b>
+                <b className="purple"> Zendesk, Jira and ElasticSearch.</b>
               </i>
-              &nbsp; like
+              <br />
+              <br />
+              Whenever possible, I also apply my curiosity for learning new
+              things about Information Technology domain such as{" "}
               <i>
-                <b className="purple"> OpenCV.</b>
+                <b className="purple">AI and Cybersecurity</b>
               </i>
             </p>
           </Col>
