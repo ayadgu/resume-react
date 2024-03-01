@@ -24,25 +24,27 @@ function Projects() {
           <Col md={4} className="project-card">
             <ProjectCard
               imgPath={chatify}
+              isGit={true}
               isBlog={false}
-              title="Chatify"
-              description="Personal Chat Room or Workspace to share resources and hangout with friends build with react.js, Material-UI, and Firebase. Have features which allows user for realtime messaging, image sharing as well as supports reactions on messages."
+              title="Vocabulary Builder"
+              description="I've created a straightforward Python script to aid in expanding my vocabulary. This script identifies and defines unfamiliar words from the books I read, presenting them in Markdown documents for convenient review. It also supports various book formats like .epub, .mobi, and .pdf."
               ghLink="https://github.com/ayadgu/Chatify"
-              demoLink="https://chatify-49.web.app/"
+              // demoLink="https://chatify-49.web.app/"
             />
           </Col>
-
           <Col md={4} className="project-card">
             <ProjectCard
               imgPath={bitsOfCode}
-              isBlog={false}
-              title="Bits-0f-C0de"
-              description="My personal blog page build with Next.js and Tailwind Css which takes the content from makdown files and renders it using Next.js. Supports dark mode and easy to write blogs using markdown."
-              ghLink="https://github.com/ayadgu/Bits-0f-C0de"
-              demoLink="https://blogs.demo.tech/"
+              isGit={false}
+              title="Studio Ayad"
+              description="Entrepreneurial venture where I created 3D designs using software, transforming them into 2D drawings for sale in multiple Parisian popup stores."
+              // ghLink="https://github.com/ayadgu/Bits-0f-C0de"
+              demoLink="/ayad-studio"
+              label="Explore"
             />
           </Col>
 
+          {/* 
           <Col md={4} className="project-card">
             <ProjectCard
               imgPath={editor}
@@ -87,6 +89,7 @@ function Projects() {
               // demoLink="https://blogs.demo.tech/"      <--------Please include a demo link here
             />
           </Col>
+            */}
         </Row>
       </Container>
     </Container>
