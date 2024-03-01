@@ -52,9 +52,9 @@ function Home2() {
               <br />
               <br />
               Whenever possible, I also apply my curiosity for learning new
-              things about Information Technology domain such as{" "}
+              things about Information Technology domains such as{" "}
               <i>
-                <b className="purple">AI and Cybersecurity</b>
+                <b className="purple">AI and Cybersecurity.</b>
               </i>
             </p>
           </Col>
