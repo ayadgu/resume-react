@@ -1,4 +1,5 @@
 import React, { useEffect, useRef } from "react";
+import Masonry, { ResponsiveMasonry } from "react-responsive-masonry";
 import Tilt from "react-parallax-tilt";
 import { Container, Row, Col, Stack, Card, Image } from "react-bootstrap";
 import Particle from "../Particle";
@@ -48,7 +49,6 @@ import ayd9 from "../../Assets/Projects/ayd9.jpg";
 import ayd11 from "../../Assets/Projects/ayd11.png";
 import ayd12 from "../../Assets/Projects/ayd12.png";
 // import ayd13 from "../../Assets/Projects/ayd13.png";
-import { Gallery, ThumbnailImageProps } from "react-grid-gallery";
 
 const images2 = [{ src: ayd11 }, { src: ayd35 }, {}, {}];
 
@@ -102,19 +102,19 @@ function AydStudio() {
           </div>
         </div>
 
-        <Gallery
+        {/* <Gallery
           // rowHeight={400}
-          maxRows={windowsize[0] < 500 ? 1 : 2}
+          // maxRows={windowsize[0] < 500 ? 1 : 2}
           // rowHeight={windowsize[0] < 500 ? 200 : 300}
           enableImageSelection={false}
           margin={2}
           images={images2}
-        />
+        /> */}
       </Row>
       <Row>
         <Col md={8}>
           <p className="home-about-body">
-            Passionné d'architecture, Guillaume s'amuse à recréer en 3D les
+            Attaché à l'architecture, Guillaume s'amuse à recréer en 3D les
             monuments parisiens qui l'inspirent. Par pur hasard, il découvre un
             moyen de transformer ces modèles en saisissants dessins 2D. Comme
             par magie, ces œuvres prennent vie, et Guillaume affine ses
@@ -129,12 +129,29 @@ function AydStudio() {
       </Row>
       <br></br>
       <Row>
-        <Gallery
+        <ResponsiveMasonry columnsCountBreakPoints={{ 350: 1, 750: 2, 900: 3 }}>
+          <Masonry
+            // columnsCount={{ xs: 1, sm: 2, md: 3 }}
+            gutter="10px"
+          >
+            {/* columnsCount={3} */}
+            {images1.map((image, i) => (
+              <img
+                key={i}
+                src={image.src}
+                style={{ width: "100%", display: "block" }}
+              />
+            ))}
+          </Masonry>
+        </ResponsiveMasonry>
+        {/* <Gallery
           enableImageSelection={false}
           margin={2}
           images={images1}
-          maxRows={windowsize[0] < 500 ? 5 : 20}
-        />
+          rowHeight={300}
+          maxRows={10}
+          // maxRows={windowsize[0] < 500 ? 5 : 20}
+        /> */}
       </Row>
     </Container>
   );
