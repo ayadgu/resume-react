@@ -1,4 +1,5 @@
 import React from "react";
+import Tilt from "react-parallax-tilt";
 import { Container, Row, Col, Stack, Card, Image } from "react-bootstrap";
 import Particle from "../Particle";
 import leaf from "../../Assets/Projects/leaf.png";
@@ -43,27 +44,27 @@ import ayd9 from "../../Assets/Projects/ayd9.jpg";
 import ayd11 from "../../Assets/Projects/ayd11.png";
 import ayd12 from "../../Assets/Projects/ayd12.png";
 // import ayd13 from "../../Assets/Projects/ayd13.png";
-import { Gallery } from "react-grid-gallery";
+import { Gallery, ThumbnailImageProps } from "react-grid-gallery";
 
-const images = [
-  { src: ayd26 },
-  { src: ayd0 },
+const images2 = [{ src: ayd11 }, { src: ayd35 }, {}, {}];
+
+const images1 = [
+  { src: ayd23 },
   { src: ayd1 },
+  { src: ayd26 },
   { src: ayd28 },
+  { src: ayd0 },
+  { src: ayd3 },
   // { src: ayd32 },
   { src: ayd10 },
   { src: ayd31 },
-  { src: ayd3 },
   { src: ayd4 },
-
   { src: ayd29 },
   { src: ayd30 },
-
   { src: ayd5 },
   { src: ayd6 },
   { src: ayd9 },
   { src: ayd11 },
-  { src: ayd33 },
   { src: ayd12 },
   // { src: ayd15 },
   // { src: ayd16 },
@@ -74,22 +75,46 @@ const images = [
   { src: ayd19 },
   { src: ayd21 },
   { src: ayd22 },
-  { src: ayd23 },
   { src: ayd24 },
-  { src: ayd34 },
   { src: ayd25 },
-
-  // { src: ayd35 },
 ];
+
 function AydStudio() {
   return (
     <Container fluid className="project-section" style={{ padding: 40 }} md="6">
-      <Gallery
-        rowHeight={300}
-        enableImageSelection={false}
-        margin={2}
-        images={images}
-      />
+      <Row>
+        <Gallery
+          rowHeight={400}
+          enableImageSelection={false}
+          margin={2}
+          images={images2}
+        />
+      </Row>
+      <Row>
+        <Col md={8}>
+          <p className="home-about-body">
+            Passionné d'architecture, Guillaume s'amuse à recréer en 3D les
+            monuments parisiens qui l'inspirent. Par pur hasard, il découvre un
+            moyen de transformer ces modèles en saisissants dessins 2D. Comme
+            par magie, ces œuvres prennent vie, et Guillaume affine ses
+            techniques pour donner l'illusion que chaque trait est tracé à la
+            main. Un talent créatif et une passion architecturale fusionnent
+            dans ses créations uniques.
+          </p>
+        </Col>
+        <Col>
+          {/* <img src={ayd11} alt="Montmartre" className="img-fluid"></img> */}
+        </Col>
+      </Row>
+      <br></br>
+      <Row>
+        <Gallery
+          rowHeight={400}
+          enableImageSelection={false}
+          margin={2}
+          images={images1}
+        />
+      </Row>
     </Container>
   );
 }
