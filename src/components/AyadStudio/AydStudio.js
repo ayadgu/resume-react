@@ -24,6 +24,8 @@ import ayd25 from "../../Assets/Projects/ayd25.jpg";
 import ayd26 from "../../Assets/Projects/ayd26.jpg";
 
 import ayd28 from "../../Assets/Projects/ayd28.gif";
+import ayd37 from "../../Assets/Projects/ayd37.png";
+import ayd36 from "../../Assets/Projects/ayd36.jpg";
 import ayd29 from "../../Assets/Projects/ayd29.gif";
 import ayd30 from "../../Assets/Projects/ayd30.gif";
 import ayd31 from "../../Assets/Projects/ayd31.gif";
@@ -53,9 +55,12 @@ const images1 = [
   { src: ayd1 },
   { src: ayd26 },
   { src: ayd28 },
+  { src: ayd37 },
+  { src: ayd36 },
   { src: ayd0 },
   { src: ayd3 },
   // { src: ayd32 },
+  { src: ayd13 },
   { src: ayd10 },
   { src: ayd31 },
   { src: ayd4 },
