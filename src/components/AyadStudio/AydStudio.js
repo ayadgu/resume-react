@@ -91,14 +91,14 @@ function AydStudio() {
   return (
     <Container fluid className="project-section" style={{ padding: 40 }} md="6">
       <Row>
-        {/* <div className="App">
+        <div className="App">
           <div className="window">
             Width : <span>{windowsize[0]}</span>
           </div>
           <div className="window">
             Height : <span>{windowsize[1]}</span>
           </div>
-        </div> */}
+        </div>
         {windowsize[0] < 500 ? (
           <img src={ayd37}></img>
         ) : (
