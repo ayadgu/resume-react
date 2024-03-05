@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useRef } from "react";
 import Tilt from "react-parallax-tilt";
 import { Container, Row, Col, Stack, Card, Image } from "react-bootstrap";
 import Particle from "../Particle";
@@ -37,6 +37,8 @@ import ayd35 from "../../Assets/Projects/ayd35.jpg";
 
 import ayd0 from "../../Assets/Projects/ayd0.jpg";
 // import ayd1 from "../../Assets/Projects/ayd1.jpg";
+
+import useSize from "./useSize";
 import ayd10 from "../../Assets/Projects/ayd10.jpg";
 import ayd3 from "../../Assets/Projects/ayd3.jpg";
 import ayd4 from "../../Assets/Projects/ayd4.jpg";
@@ -51,49 +53,62 @@ import { Gallery, ThumbnailImageProps } from "react-grid-gallery";
 const images2 = [{ src: ayd11 }, { src: ayd35 }, {}, {}];
 
 const images1 = [
+  { src: ayd37 },
+  { src: ayd28 },
   { src: ayd23 },
+  // { src: ayd4 },
   { src: ayd1 },
   { src: ayd26 },
-  { src: ayd28 },
-  { src: ayd37 },
   { src: ayd36 },
-  { src: ayd0 },
+  { src: ayd33 },
+  // { src: ayd0  },
   { src: ayd3 },
   // { src: ayd32 },
   { src: ayd13 },
-  { src: ayd10 },
+  // { src: ayd10 },
   { src: ayd31 },
-  { src: ayd4 },
   { src: ayd29 },
   { src: ayd30 },
   { src: ayd5 },
-  { src: ayd6 },
+  // { src: ayd6 },
   { src: ayd9 },
   { src: ayd11 },
   { src: ayd12 },
-  // { src: ayd15 },
   // { src: ayd16 },
   // { src: ayd17 },
   // { src: ayd13 },
   // { src: ayd14 },
   { src: ayd18 },
   { src: ayd19 },
-  { src: ayd21 },
+  // { src: ayd21 },
   { src: ayd22 },
   { src: ayd24 },
   { src: ayd25 },
 ];
 
 function AydStudio() {
+  const windowsize = useSize();
   return (
     <Container fluid className="project-section" style={{ padding: 40 }} md="6">
       <Row>
-        <Gallery
-          rowHeight={400}
-          enableImageSelection={false}
-          margin={2}
-          images={images2}
-        />
+        {/* <div className="App">
+          <div className="window">
+            Width : <span>{windowsize[0]}</span>
+          </div>
+          <div className="window">
+            Height : <span>{windowsize[1]}</span>
+          </div>
+        </div> */}
+        {windowsize[0] < 500 ? (
+          <img src={ayd37}></img>
+        ) : (
+          <Gallery
+            rowHeight={400}
+            enableImageSelection={false}
+            margin={2}
+            images={images2}
+          />
+        )}
       </Row>
       <Row>
         <Col md={8}>
@@ -114,10 +129,10 @@ function AydStudio() {
       <br></br>
       <Row>
         <Gallery
-          rowHeight={400}
           enableImageSelection={false}
           margin={2}
           images={images1}
+          rowHeight={windowsize[0] < 500 ? 100 : 300}
         />
       </Row>
     </Container>
