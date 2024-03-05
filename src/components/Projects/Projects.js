@@ -28,7 +28,7 @@ function Projects() {
               isBlog={false}
               title="Vocabulary Builder"
               description="I've created a straightforward Python script to aid in expanding my vocabulary. This script identifies and defines unfamiliar words from the books I read, presenting them in Markdown documents for convenient review. It also supports various book formats like .epub, .mobi, and .pdf."
-              ghLink="https://github.com/ayadgu/Chatify"
+              ghLink="https://github.com/ayadgu/VocabularyBuilder"
               // demoLink="https://chatify-49.web.app/"
             />
           </Col>
