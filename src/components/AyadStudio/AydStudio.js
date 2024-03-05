@@ -89,26 +89,27 @@ const images1 = [
 function AydStudio() {
   const windowsize = useSize();
   return (
-    <Container fluid className="project-section" style={{ padding: 40 }} md="6">
+    <Container fluid className="project-section" style={{ padding: 40 }}>
       <Row>
-        <div className="App">
-          <div className="window">
-            Width : <span>{windowsize[0]}</span>
-          </div>
-          <div className="window">
-            Height : <span>{windowsize[1]}</span>
+        <div style={{ display: "none" }}>
+          <div className="App">
+            <div className="window">
+              Width : <span>{windowsize[0]}</span>
+            </div>
+            <div className="window">
+              Height : <span>{windowsize[1]}</span>
+            </div>
           </div>
         </div>
-        {windowsize[0] < 500 ? (
-          <img src={ayd37}></img>
-        ) : (
-          <Gallery
-            rowHeight={400}
-            enableImageSelection={false}
-            margin={2}
-            images={images2}
-          />
-        )}
+
+        <Gallery
+          // rowHeight={400}
+          maxRows={windowsize[0] < 500 ? 1 : 2}
+          // rowHeight={windowsize[0] < 500 ? 200 : 300}
+          enableImageSelection={false}
+          margin={2}
+          images={images2}
+        />
       </Row>
       <Row>
         <Col md={8}>
@@ -132,7 +133,7 @@ function AydStudio() {
           enableImageSelection={false}
           margin={2}
           images={images1}
-          rowHeight={windowsize[0] < 500 ? 100 : 300}
+          maxRows={windowsize[0] < 500 ? 5 : 20}
         />
       </Row>
     </Container>
