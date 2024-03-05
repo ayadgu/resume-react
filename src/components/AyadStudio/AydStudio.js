@@ -110,6 +110,9 @@ function AydStudio() {
           margin={2}
           images={images2}
         /> */}
+        <Col>
+          <img src={ayd11} alt="Montmartre" className="img-fluid"></img>
+        </Col>
       </Row>
       <Row>
         <Col md={8}>
@@ -123,13 +126,11 @@ function AydStudio() {
             dans ses créations uniques.
           </p>
         </Col>
-        <Col>
-          {/* <img src={ayd11} alt="Montmartre" className="img-fluid"></img> */}
-        </Col>
       </Row>
       <br></br>
       <Row>
-        <ResponsiveMasonry columnsCountBreakPoints={{ 350: 1, 750: 2, 900: 3 }}>
+        <ResponsiveMasonry columnsCountBreakPoints={{ 750: 2, 900: 3 }}>
+          {/* 350: 1, */}
           <Masonry
             // columnsCount={{ xs: 1, sm: 2, md: 3 }}
             gutter="10px"
