@@ -19,7 +19,45 @@ function Home2() {
             <h1 style={{ fontSize: "2.6em" }}>
               LET ME <span className="purple"> INTRODUCE </span> MYSELF
             </h1>
-            <p className="home-about-body">
+            <p className="home-about-body" hidden={true}>
+              Passionné de technologie et enthousiaste à l'idée d'assister les
+              utilisateurs, mes compétences en informatique sont un outil
+              précieux pour offrir un support efficace. De la résolution de
+              problèmes à la recherche de solutions, j'éprouve du plaisir à
+              rendre la technologie accessible et conviviale pour tous.
+              <br></br>
+              <br></br>
+              Fort de plus de 4 ans d'expérience en tant que consultant en
+              Transformation Digitale chez{" "}
+              <i>
+                <b className="purple">Accenture et Sopra Steria</b>
+              </i>
+              , j'ai perfectionné mes compétences dans la priorisation et la
+              résolution des demandes des clients, le signalement de bugs
+              produits et d'anomalies à l'équipe technique, ainsi que l'analyse
+              de logs et les compétences en programmation.
+              <br />
+              <br />
+              Mon engagement envers la satisfaction des utilisateurs va au-delà
+              du dépannage, il s'agit de créer des expériences fluides.
+              Naviguons ensemble dans le paysage numérique, embrassant le
+              plaisir de résoudre des défis et restant à la pointe dans le monde
+              technologique en constante évolution !
+              <br />
+              <br />
+              Je maîtrise des langages classiques tels que
+              <i>
+                <b className="purple"> Python, Javascript et NoSQL</b>
+              </i>{" "}
+              , et je suis compétent dans l'utilisation de Zendesk, Jira et
+              ElasticSearch. Chaque fois que possible, j'applique également ma
+              curiosité pour apprendre de nouvelles choses dans les domaines de
+              la technologie de l'information, tels que l'{" "}
+              <i>
+                <b className="purple">IA et Cybersecurity.</b>
+              </i>
+            </p>
+            <p className="home-about-body" hidden={false}>
               <br></br>
               <br></br>
               Tech enthusiast passionate about assisting end-users, my computer

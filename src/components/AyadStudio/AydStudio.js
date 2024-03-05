@@ -117,6 +117,14 @@ function AydStudio() {
       <Row>
         <Col md={8}>
           <p className="home-about-body">
+            Passionate about architecture, Guillaume enjoys recreating in 3D the
+            Parisian landmarks that inspire him. By pure chance, he discovers a
+            way to transform these models into striking 2D drawings. Like magic,
+            these works come to life, and Guillaume refines his techniques to
+            give the illusion that every line is hand-drawn. A creative talent
+            and architectural passion merge in his unique creations.
+          </p>
+          <p className="home-about-body" hidden={true}>
             Attaché à l'architecture, Guillaume s'amuse à recréer en 3D les
             monuments parisiens qui l'inspirent. Par pur hasard, il découvre un
             moyen de transformer ces modèles en saisissants dessins 2D. Comme
