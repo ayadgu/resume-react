@@ -76,9 +76,9 @@ const images = [
   { src: ayd22 },
   { src: ayd23 },
   { src: ayd24 },
+  { src: ayd34 },
   { src: ayd25 },
 
-  { src: ayd34 },
   // { src: ayd35 },
 ];
 function AydStudio() {
