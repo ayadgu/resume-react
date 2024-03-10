@@ -90,27 +90,8 @@ function AydStudio() {
   const windowsize = useSize();
   return (
     <Container fluid className="project-section" style={{ padding: 40 }}>
-      <Row>
-        <div style={{ display: "none" }}>
-          <div className="App">
-            <div className="window">
-              Width : <span>{windowsize[0]}</span>
-            </div>
-            <div className="window">
-              Height : <span>{windowsize[1]}</span>
-            </div>
-          </div>
-        </div>
-
-        {/* <Gallery
-          // rowHeight={400}
-          // maxRows={windowsize[0] < 500 ? 1 : 2}
-          // rowHeight={windowsize[0] < 500 ? 200 : 300}
-          enableImageSelection={false}
-          margin={2}
-          images={images2}
-        /> */}
-        <Col>
+      <Row className="justify-content-md-center">
+        <Col md={6}>
           <img src={ayd11} alt="Montmartre" className="img-fluid"></img>
         </Col>
       </Row>
