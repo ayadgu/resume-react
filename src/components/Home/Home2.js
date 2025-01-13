@@ -60,41 +60,38 @@ function Home2() {
             <p className="home-about-body" hidden={false}>
               <br></br>
               <br></br>
-              Tech enthusiast passionate about assisting end-users, my computer
-              skills serve as a valuable tool in providing effective support.
-              From troubleshooting to finding solutions, I take pleasure in
-              making technology accessible and user-friendly for everyone.
-              <br></br>
-              <br></br>
-              With over 4 years of experience as a Customer Care at{" "}
-              <i>
-                <b className="purple">Accenture and Sopra Steria</b>
-              </i>
-              , I've honed my skills in prioritizing and resolving customer
-              tickets, reporting product bugs and anomalies to the technical
-              team log analysis and programing skills.
+              "Tech enthusiast with a passion for simplifying technology and
+              empowering end-users. I leverage my{" "}
+              <b className="purple">computer skills</b> to troubleshoot issues,
+              identify solutions, and make technology more accessible for
+              everyone.
               <br />
               <br />
-              My commitment to user satisfaction goes beyond troubleshooting –
-              it's about creating seamless experiences. Let's navigate the
-              digital landscape together, embracing the thrill of solving
-              challenges and staying ahead in the ever-evolving tech world!
-              <br />
-              <br />I am fluent in classics like
-              <i>
-                <b className="purple"> Python, Javascript and NoSQL</b>
-              </i>{" "}
-              and proficient in{" "}
-              <i>
-                <b className="purple"> Zendesk, Jira and ElasticSearch.</b>
-              </i>
+              With over <b className="purple">4 years of experience</b> in
+              Customer Care at <b className="purple">Accenture</b> and{" "}
+              <b className="purple">Sopra Steria</b>, I’ve developed expertise
+              in managing customer tickets, analyzing logs, reporting bugs, and
+              applying <b className="purple">programming skills</b> to enhance
+              support processes.
               <br />
               <br />
-              Whenever possible, I also apply my curiosity for learning new
-              things about Information Technology domains such as{" "}
-              <i>
-                <b className="purple">AI and Cybersecurity.</b>
-              </i>
+              My approach goes beyond solving problems—it’s about creating{" "}
+              <b className="purple">
+                seamless and user-friendly digital experiences
+              </b>
+              . Together, let’s tackle challenges and stay ahead in the
+              ever-evolving tech world!
+              <br />
+              <br />
+              I’m fluent in <b className="purple">Python</b>,{" "}
+              <b className="purple">JavaScript</b>, and{" "}
+              <b className="purple">NoSQL</b>, with hands-on experience in{" "}
+              <b className="purple">Zendesk</b>, <b className="purple">Jira</b>,
+              and <b className="purple">ElasticSearch</b>.<br />
+              <br />
+              In my spare time, I’m driven by curiosity to explore emerging IT
+              fields like <b className="purple">AI</b> and{" "}
+              <b className="purple">Cybersecurity</b>."
             </p>
           </Col>
           <Col md={4} className="myAvtar">
