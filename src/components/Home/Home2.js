@@ -9,6 +9,7 @@ import {
   AiFillInstagram,
 } from "react-icons/ai";
 import { FaLinkedinIn } from "react-icons/fa";
+import CVViewer from "./CVViewer";
 
 function Home2() {
   return (
@@ -97,6 +98,13 @@ function Home2() {
           <Col md={4} className="myAvtar">
             <img src={myImg} className="img-fluid" alt="avatar" />
             <Tilt></Tilt>
+          </Col>
+        </Row>
+        <Row>
+          <Col>
+            <div>
+              <CVViewer />
+            </div>
           </Col>
         </Row>
         <Row>
