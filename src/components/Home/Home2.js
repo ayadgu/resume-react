@@ -102,9 +102,7 @@ function Home2() {
         </Row>
         <Row>
           <Col>
-            <div>
-              <CVViewer />
-            </div>
+            <div>{/* <CVViewer /> */}</div>
           </Col>
         </Row>
         <Row>
