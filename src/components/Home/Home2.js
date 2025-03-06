@@ -20,73 +20,47 @@ function Home2() {
             <h1 style={{ fontSize: "2.6em" }}>
               LET ME <span className="purple"> INTRODUCE </span> MYSELF
             </h1>
-            <p className="home-about-body" hidden={false}>
-              Guillaume, consultant en transformation digitale, je mets mes
-              compétences en informatique au service des utilisateurs pour
-              rendre la technologie accessible et conviviale. Avec plus de 4 ans
-              d'expérience chez{" "}
-              <i>
-                <b className="purple">Accenture et Sopra Steria</b>
-              </i>
-              , j’ai acquis une solide expertise dans la priorisation et la
-              résolution des demandes clients, le signalement de bugs et
-              l'analyse de logs. Mon rôle va au-delà du dépannage : il s'agit de
-              créer des expériences utilisateurs fluides et efficaces.
+            <p className="home-about-body">
+              Passionné de technologie et animé par la volonté de simplifier
+              l'expérience utilisateur, j'aime résoudre des problèmes et
+              optimiser les processus pour rendre les outils plus intuitifs et
+              performants. Offrir un support efficace ne se limite pas à
+              dépanner, c'est aussi améliorer continuellement les solutions
+              existantes et anticiper les besoins.
               <br></br>
               <br></br>
-              Je maîtrise des langages comme{" "}
-              <i>
-                <b className="purple">Python, Javascript et NoSQL</b>
-              </i>
-              , et je suis familier avec des outils comme Zendesk, Jira et
-              ElasticSearch. Toujours en quête de nouvelles connaissances, je
-              m’intéresse également à des domaines en pleine croissance tels que
-              l’intelligence artificielle et la cybersécurité, que j’explore
-              activement.
+              Avec <b className="purple">5 ans d'expérience</b> en tant que
+              consultant en Transformation Digitale et support applicatif chez{" "}
+              <b className="purple">Accenture</b>,{" "}
+              <b className="purple">Sopra Steria</b> et{" "}
+              <b className="purple">Praxedo</b>, j'ai acquis une solide
+              expertise en gestion des demandes clients, analyse de logs,
+              automatisation de tâches et collaboration avec les équipes de
+              développement pour optimiser les produits.
               <br></br>
               <br></br>
-              Ensemble, naviguons dans le paysage numérique, avec la conviction
-              que chaque défi est une occasion d’innover et de progresser.
+              Curieux et toujours en quête d'amélioration, je m'intéresse aux
+              technologies émergentes comme l'intelligence artificielle et la
+              cybersécurité, deux domaines qui redéfinissent le futur du support
+              et de l'analyse technique. J'aime relever des défis complexes et
+              explorer de nouvelles approches pour améliorer l'efficacité des
+              systèmes et des équipes.
+              <br></br>
+              <br></br>
+              Je maîtrise <b className="purple">Python</b>,{" "}
+              <b className="purple">JavaScript</b> et{" "}
+              <b className="purple">SQL</b>, ainsi que des outils essentiels
+              comme <b className="purple">Zendesk</b>,{" "}
+              <b className="purple">Jira</b>, <b className="purple">Kibana</b>,{" "}
+              <b className="purple">Postman</b> et{" "}
+              <b className="purple">ElasticSearch</b>. Mon expertise couvre
+              aussi les bases de données (<b className="purple">PostgreSQL</b>,{" "}
+              <b className="purple">NoSQL</b>), l'automatisation via scripting
+              et l'analyse avancée de logs. Toujours en veille, je suis prêt à
+              relever de nouveaux défis pour évoluer dans un univers
+              technologique en perpétuelle mutation.
             </p>
 
-            <p className="home-about-body" hidden={false}>
-              Passionné de technologie et enthousiaste à l'idée d'assister les
-              utilisateurs, mes compétences en informatique sont un outil
-              précieux pour offrir un support efficace. De la résolution de
-              problèmes à la recherche de solutions, j'éprouve du plaisir à
-              rendre la technologie accessible et conviviale pour tous.
-              <br></br>
-              <br></br>
-              Fort de plus de 4 ans d'expérience en tant que consultant en
-              Transformation Digitale chez{" "}
-              <i>
-                <b className="purple">Accenture et Sopra Steria</b>
-              </i>
-              , j'ai perfectionné mes compétences dans la priorisation et la
-              résolution des demandes des clients, le signalement de bugs
-              produits et d'anomalies à l'équipe technique, ainsi que l'analyse
-              de logs et les compétences en programmation.
-              <br />
-              <br />
-              Mon engagement envers la satisfaction des utilisateurs va au-delà
-              du dépannage, il s'agit de créer des expériences fluides.
-              Naviguons ensemble dans le paysage numérique, embrassant le
-              plaisir de résoudre des défis et restant à la pointe dans le monde
-              technologique en constante évolution !
-              <br />
-              <br />
-              Je maîtrise des langages classiques tels que
-              <i>
-                <b className="purple"> Python, Javascript et NoSQL</b>
-              </i>{" "}
-              , et je suis compétent dans l'utilisation de Zendesk, Jira et
-              ElasticSearch. Chaque fois que possible, j'applique également ma
-              curiosité pour apprendre de nouvelles choses dans les domaines de
-              la technologie de l'information, tels que l'{" "}
-              <i>
-                <b className="purple">IA et Cybersecurity.</b>
-              </i>
-            </p>
             <p className="home-about-body" hidden={true}>
               <br></br>
               <br></br>
