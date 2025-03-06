@@ -21,6 +21,35 @@ function Home2() {
               LET ME <span className="purple"> INTRODUCE </span> MYSELF
             </h1>
             <p className="home-about-body" hidden={false}>
+              Guillaume, consultant en transformation digitale, je mets mes
+              compétences en informatique au service des utilisateurs pour
+              rendre la technologie accessible et conviviale. Avec plus de 4 ans
+              d'expérience chez{" "}
+              <i>
+                <b className="purple">Accenture et Sopra Steria</b>
+              </i>
+              , j’ai acquis une solide expertise dans la priorisation et la
+              résolution des demandes clients, le signalement de bugs et
+              l'analyse de logs. Mon rôle va au-delà du dépannage : il s'agit de
+              créer des expériences utilisateurs fluides et efficaces.
+              <br></br>
+              <br></br>
+              Je maîtrise des langages comme{" "}
+              <i>
+                <b className="purple">Python, Javascript et NoSQL</b>
+              </i>
+              , et je suis familier avec des outils comme Zendesk, Jira et
+              ElasticSearch. Toujours en quête de nouvelles connaissances, je
+              m’intéresse également à des domaines en pleine croissance tels que
+              l’intelligence artificielle et la cybersécurité, que j’explore
+              activement.
+              <br></br>
+              <br></br>
+              Ensemble, naviguons dans le paysage numérique, avec la conviction
+              que chaque défi est une occasion d’innover et de progresser.
+            </p>
+
+            <p className="home-about-body" hidden={false}>
               Passionné de technologie et enthousiaste à l'idée d'assister les
               utilisateurs, mes compétences en informatique sont un outil
               précieux pour offrir un support efficace. De la résolution de
