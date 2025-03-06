@@ -98,11 +98,12 @@ function AydStudio() {
       <Row>
         <Col md={8} class="home-about-description">
           <p className="home-about-body" style={{ color: "white" }}>
-            Guillaume, passionate about architecture and 3D design, brings
-            everyday Parisian scenes to life through a minimalist,
-            pen-stroke-inspired style. His creations, ranging from stills to
-            animations, invite viewers to explore a unique blend of realism and
-            imagination, leaving room for personal interpretation.
+            Guillaume, créateur de dessins inspiré par l'architecture et le
+            design 3D, recrée des scènes parisiennes du quotidien dans un style
+            minimaliste, influencé par les coups de crayon. Ses créations,
+            allant des illustrations fixes aux animations, offrent une
+            exploration unique mêlant réalisme et imagination, tout en laissant
+            place à l’interprétation personnelle.
           </p>
           <p className="home-about-body" hidden={true}>
             Attaché à l'architecture, Guillaume s'amuse à recréer en 3D les

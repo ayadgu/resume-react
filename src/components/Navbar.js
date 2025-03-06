@@ -60,7 +60,7 @@ function NavBar() {
                 <AiOutlineHome style={{ marginBottom: "2px" }} /> Home
               </Nav.Link>
             </Nav.Item>
-            {/* <Nav.Item>
+            <Nav.Item>
               <Nav.Link
                 as={Link}
                 to="/ayd-studio"
@@ -71,7 +71,7 @@ function NavBar() {
                 />{" "}
                 Ayd Studio
               </Nav.Link>
-            </Nav.Item> */}
+            </Nav.Item>
             {/* 
             <Nav.Item>
               <Nav.Link
