@@ -20,7 +20,7 @@ function Home2() {
             <h1 style={{ fontSize: "2.6em" }}>
               LET ME <span className="purple"> INTRODUCE </span> MYSELF
             </h1>
-            <p className="home-about-body" hidden={true}>
+            <p className="home-about-body" hidden={false}>
               Passionné de technologie et enthousiaste à l'idée d'assister les
               utilisateurs, mes compétences en informatique sont un outil
               précieux pour offrir un support efficace. De la résolution de
@@ -58,10 +58,10 @@ function Home2() {
                 <b className="purple">IA et Cybersecurity.</b>
               </i>
             </p>
-            <p className="home-about-body" hidden={false}>
+            <p className="home-about-body" hidden={true}>
               <br></br>
               <br></br>
-              "Tech enthusiast with a passion for simplifying technology and
+              Tech enthusiast with a passion for simplifying technology and
               empowering end-users. I leverage my{" "}
               <b className="purple">computer skills</b> to troubleshoot issues,
               identify solutions, and make technology more accessible for
@@ -92,7 +92,7 @@ function Home2() {
               <br />
               In my spare time, I’m driven by curiosity to explore emerging IT
               fields like <b className="purple">AI</b> and{" "}
-              <b className="purple">Cybersecurity</b>."
+              <b className="purple">Cybersecurity</b>.
             </p>
           </Col>
           <Col md={4} className="myAvtar">
