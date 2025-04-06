@@ -1,0 +1,153 @@
+/* ProjectImageGallery.css */
+.project-gallery {
+  width: 100%;
+  position: relative;
+  margin-bottom: 30px;
+}
+
+.gallery-container {
+  width: 100%;
+  border-radius: 8px;
+  overflow: hidden;
+  position: relative;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+/* Slider structure for smooth transitions */
+.slider-container {
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+  background-color: #f8f9fa;
+}
+
+.slider-track {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  will-change: transform;
+}
+
+.slide {
+  flex: 0 0 100%;
+  height: 350px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 15px;
+}
+
+.slide img {
+  max-height: 320px;
+  max-width: 100%;
+  object-fit: contain;
+  border-radius: 4px;
+}
+
+/* Navigation controls styling */
+.gallery-nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 15px;
+  background-color: rgba(248, 249, 250, 0.8);
+  border-top: 1px solid #e9ecef;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 10;
+}
+
+.gallery-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 36px;
+  height: 36px;
+  border: none;
+  border-radius: 50%;
+  background-color: white;
+  color: #495057;
+  font-size: 18px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.gallery-btn:hover {
+  background-color: #0d6efd;
+  color: white;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+}
+
+.gallery-btn:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+  transform: none;
+}
+
+.gallery-btn svg {
+  width: 20px;
+  height: 20px;
+}
+
+.gallery-indicators {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+}
+
+.gallery-dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: #ced4da;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.gallery-dot:hover {
+  background-color: #adb5bd;
+}
+
+.gallery-dot.active {
+  background-color: #0d6efd;
+  transform: scale(1.2);
+}
+
+/* Add animation for image entering from left */
+@keyframes slideFromLeft {
+  from {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+/* Add animation for image entering from right */
+@keyframes slideFromRight {
+  from {
+    transform: translateX(100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+/* Add fade transition for smoother experience */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}

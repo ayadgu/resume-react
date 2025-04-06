@@ -129,13 +129,13 @@ function AydStudio() {
             gutter="10px"
           >
             {/* columnsCount={3} */}
-            {images1.map((image, i) => (
+            {/* {images1.map((image, i) => (
               <img
                 key={i}
                 src={image.src}
                 style={{ width: "100%", display: "block" }}
               />
-            ))}
+            ))} */}
           </Masonry>
         </ResponsiveMasonry>
         {/* <Gallery

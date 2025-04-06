@@ -452,10 +452,10 @@ button:focus {
 }
 
 .project-card {
-  padding-top: 50px !important;
+  /* padding-top: 50px !important;
   padding-bottom: 50px !important;
   padding-left: 25px !important;
-  padding-right: 25px !important;
+  padding-right: 25px !important; */
   height: auto !important;
 }
 
@@ -468,7 +468,7 @@ button:focus {
   height: 100% !important;
 }
 .project-card-view:hover {
-  transform: scale(1.02) !important;
+  /* transform: scale(1.02) !important; */
   overflow: hidden !important;
   box-shadow: 0 4px 4px 5px rgba(129, 72, 144, 0.561) !important;
 }
@@ -499,7 +499,7 @@ button:focus {
 }
 
 .blog-card-view:hover {
-  transform: scale(1.02) !important;
+  /* transform: scale(1.02) !important; */
   overflow: hidden !important;
   box-shadow: 0 3px 3px 5px rgba(155, 88, 173, 0.65) !important;
 }
@@ -740,4 +740,502 @@ button:focus {
 }
 .fork-btn-inner::after {
   display: none !important;
+}
+
+.project-card {
+  /* padding: 20px 16px; */
+  margin-bottom: 30px;
+}
+
+.project-box {
+  background-color: #212038;
+  border-radius: 10px;
+  padding: 25px;
+  height: 100%;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.project-box:hover {
+  /* transform: scale(1.03); */
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+}
+
+.project-icon {
+  margin-bottom: 15px;
+  color: #c770f0;
+}
+
+.project-heading {
+  font-size: 2.3em;
+  font-weight: 500;
+  padding-top: 10px;
+}
+
+.project-container {
+  margin-bottom: 60px;
+  padding: 20px;
+  background-color: rgba(33, 32, 56, 0.7);
+  border-radius: 15px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+.project-title {
+  display: flex;
+  align-items: center;
+  margin-bottom: 25px;
+}
+
+.project-title h3 {
+  margin: 0;
+  margin-left: 15px;
+  font-weight: 600;
+  color: #c770f0;
+}
+
+.project-icon {
+  font-size: 2.5em;
+  color: #c770f0;
+}
+
+.project-screenshot {
+  margin-bottom: 20px;
+}
+
+.project-description h4 {
+  color: #c770f0;
+  /* margin-top: 15px; */
+  /* margin-bottom: 10px; */
+}
+.project-description p {
+  color: #fff;
+  margin: 0 !important;
+  margin-bottom: 0;
+  font-size: 1.1em;
+  text-align: justify;
+}
+
+.project-description li {
+  text-align: justify;
+  margin-bottom: 5px;
+  color: #fff;
+  font-size: 1em;
+  list-style-type: disc;
+}
+
+.tech-list {
+  display: flex;
+  flex-wrap: wrap;
+  padding-left: 0;
+  list-style-type: none;
+  margin-bottom: 15px;
+}
+
+.tech-list li {
+  background-color: #2d2b42;
+  margin-right: 10px;
+  margin-bottom: 10px;
+  padding: 5px 12px;
+  border-radius: 20px;
+  font-size: 0.9em;
+}
+
+.project-content .project-links {
+  margin-top: 0px !important;
+}
+
+@media (max-width: 991px) {
+  .order-1 {
+    order: 1;
+  }
+  .order-2 {
+    order: 2;
+  }
+}
+
+.body {
+  color: white !important;
+}
+
+/* Project Design CSS */
+/* General container settings */
+.project-container {
+  padding: 20px;
+  margin: 0 auto;
+}
+
+.project-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+/* Project image */
+.project-screenshot img {
+  width: 100%; /* Ensures the image scales with the container */
+  height: auto; /* Keeps the aspect ratio intact */
+  max-width: 100%; /* Ensures no overflow */
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Project title */
+.project-title h3 {
+  font-size: 1.5rem; /* Adjust font size for smaller screens */
+  margin-top: 10px;
+}
+
+/* Project description and other details */
+.project-details h4 {
+  font-size: 1.2rem; /* Slightly smaller font for readability */
+  margin-bottom: 10px;
+}
+
+.project-details p {
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+.project-details ul {
+  padding-left: 20px;
+}
+
+.project-details li {
+  margin-bottom: 5px;
+}
+
+/* Buttons for links */
+.project-links .btn {
+  margin-top: 10px;
+}
+
+/* For larger screens, adjust layout */
+@media (min-width: 768px) {
+  .project-wrapper {
+    flex-direction: row;
+  }
+
+  .project-screenshot,
+  .project-details {
+    width: 48%; /* Each takes up 48% of the row width on larger screens */
+  }
+}
+
+/* For smaller screens, adjust layout */
+@media (max-width: 767px) {
+  .project-wrapper {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .project-screenshot,
+  .project-details {
+    width: 100%; /* Stacks them on top of each other on smaller screens */
+    margin-bottom: 20px;
+  }
+
+  .project-title h3 {
+    font-size: 1.2rem; /* Smaller title on small screens */
+  }
+}
+
+/* Responsive SVG icon */
+.project-icon {
+  width: 2em;
+  height: 2em;
+}
+
+/* Ensure buttons are responsive too */
+.project-links .btn {
+  width: auto;
+  padding: 10px 20px;
+  font-size: 1rem;
+}
+
+/* Optional: For very small screens like mobile phones */
+@media (max-width: 480px) {
+  .project-title h3 {
+    font-size: 1rem; /* Even smaller title */
+  }
+
+  .project-screenshot img {
+    max-width: 100%;
+  }
+
+  .project-details {
+    font-size: 0.9rem; /* Adjust text size */
+  }
+}
+.project-container {
+  margin-bottom: 60px;
+  padding: 20px;
+  background-color: rgba(33, 32, 56, 0.7);
+  border-radius: 15px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+.project-title {
+  display: flex;
+  align-items: center;
+  margin-bottom: 25px;
+}
+
+.project-title h3 {
+  margin: 0;
+  margin-left: 15px;
+  font-weight: 600;
+  color: #c770f0;
+}
+
+.project-icon {
+  font-size: 2.5em;
+  color: #c770f0;
+}
+
+.project-screenshot {
+  margin-bottom: 20px;
+}
+
+.project-description h4 {
+  color: #c770f0;
+  margin-top: 15px;
+  margin-bottom: 10px;
+}
+
+.tech-list {
+  display: flex;
+  flex-wrap: wrap;
+  padding-left: 0;
+  list-style-type: none;
+  margin-bottom: 15px;
+}
+
+.tech-list li {
+  background-color: #2d2b42;
+  margin-right: 10px;
+  margin-bottom: 10px;
+  padding: 5px 12px;
+  border-radius: 20px;
+  font-size: 0.9em;
+}
+
+.project-links {
+  margin-top: 25px;
+}
+
+@media (max-width: 991px) {
+  .order-1 {
+    order: 1;
+  }
+  .order-2 {
+    order: 2;
+  }
+}
+
+/* ProjectImageGallery.css */
+.project-carousel-container {
+  width: 100%;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+}
+
+.project-carousel {
+  background-color: #f8f9fa;
+}
+
+.carousel-image-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 350px; /* Control the height of your carousel */
+  background-color: #f8f9fa;
+  padding: 15px;
+}
+
+.carousel-image {
+  max-height: 320px;
+  max-width: 100%;
+  object-fit: contain; /* This ensures your image isn't stretched */
+  border-radius: 4px;
+}
+
+/* Improve carousel controls */
+.prev-btn,
+.next-btn {
+  border: none;
+  color: white;
+  width: 10%;
+  opacity: 0.7;
+  background-color: rgba(255, 255, 255, 0);
+  border-radius: 2px;
+}
+
+.prev-btn:hover,
+.next-btn:hover {
+  opacity: 1;
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+.carousel-indicators {
+  bottom: 0;
+}
+
+.carousel-indicators button {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  margin: 0 4px;
+}
+
+/* Style for the project section buttons */
+.project-links .btn {
+  border-radius: 6px;
+  padding: 8px 16px;
+  font-weight: 500;
+  transition: all 0.3s ease;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.btn-primary {
+  background-color: #0d6efd;
+  border-color: #0d6efd;
+  color: white;
+}
+
+.btn-primary:hover {
+  background-color: #0b5ed7;
+  border-color: #0a58ca;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.btn-outline-primary {
+  border-color: #0d6efd;
+  color: #0d6efd;
+  background-color: transparent;
+}
+
+.btn-outline-primary:hover {
+  background-color: rgba(13, 110, 253, 0.1);
+  color: #0d6efd;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Add spacing between buttons */
+.project-links .btn.me-2 {
+  margin-right: 10px;
+}
+
+/* Style for the tech tags */
+.tech-stack {
+  margin: 1px 2px;
+  padding: 4px;
+}
+
+.tech-tag {
+  display: inline-block;
+  background-color: #302f4e;
+  color: white;
+  padding: 4px 10px;
+  border-radius: 4px;
+  font-size: 0.65rem;
+  margin: 1px 2px;
+  padding: 4px;
+}
+
+.gallery-container img {
+  width: auto;
+  height: 700px;
+  padding: 40px;
+  background-color: rgba(255, 255, 255, 0.05);
+}
+
+.gallery-nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+}
+
+p {
+  color: white;
+}
+
+/* Home2.css Projects */
+.project-card {
+  background-color: #212038;
+  /* border: 1px solid #e0e0e0; */
+  border-radius: 8px;
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.project-card:hover {
+  /* transform: translateY(-5px); */
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+.project-header,
+.project-content {
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+.project-header {
+  padding-top: 1.5rem;
+  /* background-color: #f8f9fa; */
+  display: flex;
+  align-items: center;
+  color: white;
+}
+.project-header h4 {
+  margin: 0;
+  /* font-size: 1.5rem; */
+  /* font-weight: bold; */
+  text-align: left;
+}
+/* .project-header p {
+  margin: 0;
+  font-size: 1.2rem;
+  font-weight: bold;
+} */
+.project-icon {
+  font-size: 1.5rem;
+  margin-right: 0.5rem;
+  color: #0d6efd;
+}
+
+.project-image-container {
+  display: block;
+  overflow: hidden;
+}
+
+.project-image-container img {
+  height: 300px;
+  object-fit: cover;
+  width: 100%;
+  transition: transform 0.3s ease;
+}
+
+.project-image-container:hover img {
+  transform: scale(1.03);
+}
+
+.project-content {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  padding-bottom: 1.5rem;
+}
+
+.project-content p {
+  margin-bottom: 0 !important;
+  color: rgb(204, 204, 204);
 }
