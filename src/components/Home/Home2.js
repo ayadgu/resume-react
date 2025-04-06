@@ -232,7 +232,7 @@ function Home2() {
           </Col>
         </Row>
         {/* Projects Section Header */}
-        <Row className="mt-5 mb-4">
+        <Row className="mt-5 mb-4" id="realisations">
           <Col md={12} className="text-center">
             <h1 className="project-heading">Réalisations</h1>
             <p>
